@@ -1,4 +1,4 @@
-// Generated on 2016-03-01 using generator-angular 0.15.1
+// Generated on 2016-03-02 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -371,7 +371,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'seanMilburnEssensysApp',
+          module: 'essensysTestApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -422,8 +422,8 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }, {
           expand: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          cwd: 'bower_components/bootstrap/dist',
+          src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
         }]
       },

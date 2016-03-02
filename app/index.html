@@ -6,6 +6,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   </head>
   <body ng-app="seanMilburnEssensysApp">
@@ -13,7 +16,7 @@
       <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
-            <img class="logo" src="images/essensys-logo.png">
+            <img class="logo" style="max-height:50px;"src="images/essensys-logo.png">
             <ul style="float: right;" class="nav navbar-nav">
               <li class="active"><a href="#/">About</a></li>
               <li><a ng-href="#/tech">Tech</a></li>
@@ -34,11 +37,9 @@
     <div ng-controller="myCtrl" class="container-fluid">
       <fieldset ng-view=""></fieldset>
     </div>
-
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
