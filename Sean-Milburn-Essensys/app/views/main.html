@@ -1,0 +1,16 @@
+<div class="jumbotron" ng-controller="myCtrl">
+  <button type="button" class="btn btn-lg btn-success" data-toggle="collapse" data-target="#demo" ng-click="getData()">Table</button>
+    <div id="demo" class="collapse in">
+      <table class="table table-bordered">
+          <tr>
+            <th ng-repeat="col in header">{{ col }}</th>
+        </tr>
+        <tr ng-repeat="row in rows">
+            <td ng-repeat="col in row">{{ col }}</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+
+
