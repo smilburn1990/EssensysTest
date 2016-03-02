@@ -48,9 +48,9 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'newer:jscs:test', 'karma']
       },
-      compass: {
+      sass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'postcss:server']
+        tasks: ['sass:server', 'autoprefixer']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -227,6 +227,32 @@ module.exports = function (grunt) {
     }, 
 
     // Compiles Sass to CSS and generates necessary files if requested
+    sass: {
+        options: {
+            includePaths: [
+                'bower_components'
+            ]
+        },
+        dist: {
+            files: [{
+                expand: true,
+                cwd: '<%= yeoman.app %>/styles',
+                src: ['*.scss'],
+                dest: '.tmp/styles',
+                ext: '.css'
+            }]
+        },
+        server: {
+            files: [{
+                expand: true,
+                cwd: '<%= yeoman.app %>/styles',
+                src: ['*.scss'],
+                dest: '.tmp/styles',
+                ext: '.css'
+            }]
+        }
+    },
+    /* Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
@@ -253,7 +279,7 @@ module.exports = function (grunt) {
           sourcemap: true
         }
       }
-    },
+    },*/
 
     // Renames files for browser caching purposes
     filerev: {
@@ -437,18 +463,20 @@ module.exports = function (grunt) {
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
-      server: [
-        'compass:server'
-      ],
-      test: [
-        'compass'
-      ],
-      dist: [
-        'compass:dist',
+    server: [
+        'sass:server',
+        'copy:styles'
+    ],
+    test: [
+        'copy:styles'
+    ],
+    dist: [
+        'sass',
+        'copy:styles',
         'imagemin',
         'svgmin'
-      ]
-    },
+    ]
+  },
 
     // Test settings
     karma: {
