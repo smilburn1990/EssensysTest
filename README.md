@@ -1,12 +1,16 @@
-#sean-milburn-essensys
+#Essensys Test
 
 This project is generated with yo angular generator version 0.15.1.
+
+#Requirements
+
+Node.js(latest)
 
 #Instructions
 
 -cd to project directory <br>
 -$npm install <br>
--$bower install
+-$grunt serve --force
 
 #External resources
 
@@ -18,8 +22,8 @@ Using Bootstrap has made this page fully responsive
 
 #Build & development
 
-Run grunt for building and grunt serve for preview.
+Run grunt for building and $grunt serve --force for preview.
 
 #Testing
 
-Running grunt test will run the unit tests with karma.
+Running $grunt test --force will run the unit tests with karma.
