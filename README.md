@@ -4,13 +4,13 @@ This project is generated with yo angular generator version 0.15.1.
 
 #Requirements
 
-Node.js(latest)
+Node.js versions >= 0.8.0
 
 #Instructions
 
 -cd to project directory <br>
 -$npm install <br>
--$grunt serve --force
+-$grunt serve
 
 #External resources
 
@@ -26,4 +26,4 @@ Run grunt for building and $grunt serve --force for preview.
 
 #Testing
 
-Running $grunt test --force will run the unit tests with karma.
+Running $grunt test will run the unit tests with karma.
