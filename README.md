@@ -10,6 +10,7 @@ Node.js(latest)
 
 -cd to project directory <br>
 -$npm install <br>
+-$grunt serve --force
 
 #External resources
 
@@ -21,8 +22,8 @@ Using Bootstrap has made this page fully responsive
 
 #Build & development
 
-Run grunt for building and grunt serve for preview.
+Run grunt for building and $grunt serve --force for preview.
 
 #Testing
 
-Running grunt test will run the unit tests with karma.
+Running $grunt test --force will run the unit tests with karma.
