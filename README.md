@@ -4,8 +4,8 @@ This project is generated with yo angular generator version 0.15.1.
 
 #Instructions
 
--cd to project directory
--$npm install
+-cd to project directory <br>
+-$npm install <br>
 -$bower install
 
 #External resources
