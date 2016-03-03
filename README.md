@@ -1,6 +1,6 @@
 #Essensys Test
 
-This project is generated with yo angular generator version 0.15.1.
+The task is to build from the mocup supplied the test page as a fully responsive webpage. We have added into the mockup a table for call records, we'd like you to populate that table through importing the data in the CSV file, you can do this direct from the file or convert the file into JSON if you prefer working with JSON. We would also like JS show/hide accordion functionality added to the button in the mockup, that will display and then hide the table as it is clicked. 
 
 #Requirements
 
@@ -19,6 +19,10 @@ A csv file is hosted on the dropbox cloud at - https://dl.dropboxusercontent.com
 #Styling
 
 Using Bootstrap has made this page fully responsive
+
+#Plugins
+
+Jquery-csv
 
 #Build & development
 
